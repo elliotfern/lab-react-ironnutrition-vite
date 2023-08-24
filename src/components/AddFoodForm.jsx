@@ -48,11 +48,8 @@ function AddFoodForm(props) {
             servings: servingsInput
         }
 
-        let clone = [...props.allFoods]
+        let clone = [...props.foodsRender]
         clone.unshift(newFood)
-
-        // añadimos al estado original
-        props.setAllFoods(clone)
 
         // añadimos al estado de la visualizacion
         props.setFoodsRender(clone)

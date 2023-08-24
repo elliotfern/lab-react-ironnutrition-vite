@@ -18,11 +18,11 @@ function FoodList() {
         <>
             <h1>React IronNutrition</h1>
 
-            <AddFoodForm allFoods={allFoods} setAllFoods={setAllFoods} foodsRender={foodsRender} setFoodsRender={setFoodsRender} />
+            <AddFoodForm foodsRender={foodsRender} setFoodsRender={setFoodsRender} />
 
             <Search allFoods={allFoods} setFoodsRender={setFoodsRender} />
 
-            <FoodBox foodsRender={foodsRender} setFoodsRender={setFoodsRender} />
+            <FoodBox foodsRender={foodsRender} setAllFoods={setAllFoods} setFoodsRender={setFoodsRender} />
 
         </>
     )
